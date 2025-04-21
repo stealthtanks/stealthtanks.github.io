@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<!-- 
+    Stealth Tanks Website
+    Main landing page for Stealth Tanks Minecraft content.
+    
+    Future improvements:
+    - Add meta tags for SEO optimization
+    - Implement structured data for rich snippets
+    - Add language attributes for internationalization
+    - Consider adding a manifest file for PWA support
+-->
+<html lang="en">
+<head>
+    <!-- 
+        Head Section
+        Contains meta information, stylesheets, and scripts.
+        Future additions:
+        - Add favicon and app icons
+        - Implement meta tags for social sharing
+        - Add analytics tracking
+        - Consider adding preload directives for critical resources
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stealth Tanks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- 
+        HOW TO ADD NEW PACKS:
+        1. Copy an existing mod-card div structure
+        2. Update the following elements:
+           - h3: Product title
+           - img: Product thumbnail (place in images/thumbnails/)
+           - .download-options: Update download links and icons
+           - .mod-info: Update release date, description, and tags
+        3. Add appropriate tags:
+           - Version compatibility: e.g., <span class="tag">1.20+</span>
+           - Platform support: e.g., <span class="tag">Windows</span>
+           - Content type: e.g., <span class="tag">Texture Pack</span>
+        4. Update MCPEDL link with correct product URL
+        5. Place in appropriate section (texture-packs, skin-packs, maps, or add-ons)
+
+        TAG GUIDELINES:
+        - Version tags: Use format "1.XX+" or specific version
+        - Platform tags: Windows, iOS, Android, Xbox, PlayStation
+        - Content type: Texture Pack, Skin Pack, Map, Add-on
+        - Additional tags: Use lowercase, hyphenated format
+        - Keep tags concise and relevant
+    -->
+</head>
+<body>
+    <!-- 
+        Header Section
+        Contains the main navigation and branding.
+        Future enhancements:
+        - Add search functionality
+        - Implement user authentication
+        - Add shopping cart for paid content
+        - Consider adding a language selector
+    -->
+    <header>
+        <nav>
+            <div class="logo">Stealth Tanks</div>
+            <div class="nav-links">
+                <a href="#" class="active">
+                    <i class="fas fa-download"></i>
+                    Downloads
+                </a>
+                <a href="https://www.youtube.com/@stealthtanks" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                    YouTube
+                </a>
+                <a href="https://mcpedl.com/user/stealth-tanks/" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    MCPEDL
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 
+            Hero Section
+            Main banner area with site title and description.
+            Future improvements:
+            - Add background video/image
+            - Implement animated text
+            - Add call-to-action buttons
+            - Consider adding a featured content slider
+        -->
+        <div class="hero">
+            <h1>Stealth Tanks</h1>
+            <p>Custom Minecraft DLC, texture packs, skin packs, maps, and add-ons</p>
+            <div class="section-nav">
+                <a href="#texture-packs" class="nav-btn">
+                    <i class="fas fa-paint-brush"></i>
+                    Texture Packs
+                </a>
+                <a href="#skin-packs" class="nav-btn">
+                    <i class="fas fa-user"></i>
+                    Skin Packs
+                </a>
+                <a href="#maps" class="nav-btn">
+                    <i class="fas fa-map"></i>
+                    Maps
+                </a>
+                <a href="#add-ons" class="nav-btn">
+                    <i class="fas fa-puzzle-piece"></i>
+                    Add-ons
+                </a>
+            </div>
+        </div>
+
+        <!-- 
+            Texture Packs Section
+            First category of content.
+            Future improvements:
+            - Add filtering options
+            - Implement sorting functionality
+            - Add category-specific search
+            - Consider adding version compatibility indicators
+        -->
+        <div class="category-section" id="texture-packs">
+            <h2>Texture Packs</h2>
+            <div class="mod-list">
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/AxolotlAttire.jpg" alt="Axolotl Attire V1">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Axolotl Attire V1</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2023-12-20</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-apple" title="iOS"></i>
+                                    <i class="fab fa-android" title="Android"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Transform your axolotls into adorable fashionistas with unique outfits and accessories. Compatible with Minecraft Bedrock 1.20.50.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Texture Pack</span>
+                            <span class="tag">Mobs</span>
+                            <span class="tag">1.20+</span>
+                        </div>
+                        <a href="https://mcpedl.com/axolotl-attire-texture-pack/" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/ime38xf6rs9riw9/AxolotlAttireV1.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/acwau0f8uhfrq95/AxolotlAttireV1.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/OriginalPaintings.jpg" alt="Original Paintings">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Original Paintings</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Custom paintings for your Minecraft world.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Texture Pack</span>
+                            <span class="tag">Decorations</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/original-paintings" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/0sh58vmb5ed014g/originalminecraftpaintings.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/0pgwwf4mjhvxl5z/originalminecraftpaintings.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/HappyWarden.jpg" alt="Happy Warden">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Happy Warden</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Make the Warden a bit more friendly with this texture pack.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Texture Pack</span>
+                            <span class="tag">Mobs</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/happy-warden" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/1ajax3pdztmy99o/HappyWardenST.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/zxelo7iygkhol9t/HappyWardenST.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/HappyStriders.jpg" alt="Happy Striders V2">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Happy Striders V2</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2023-10-28</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-apple" title="iOS"></i>
+                                    <i class="fab fa-android" title="Android"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Give your Striders a cheerful makeover with two unique styles. Features happy expressions and improved textures. Works with Minecraft Bedrock 1.20.30+.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Texture Pack</span>
+                            <span class="tag">Mobs</span>
+                            <span class="tag">1.20+</span>
+                        </div>
+                        <a href="https://mcpedl.com/happy-striders-pack/" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/zawlbe6no49mbjx/HappyStridersV2-Type1.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    Type 1 ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/dtd5d7j0j0ujbem/HappyStridersV2-Type1.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    Type 1 MCPACK
+                                </a>
+                                <a href="https://www.mediafire.com/file/gx12tkpv3enst2e/HappyStridersV2-Type2.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    Type 2 ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/kiolinp3srf9151/HappyStridersV2-Type2.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    Type 2 MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/MemePaintings.jpg" alt="Meme Paintings">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Meme Paintings</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Add some humor to your world with these meme-themed paintings.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Texture Pack</span>
+                            <span class="tag">Decorations</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/meme-paintings" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/r5pj6z41od2n5rm/MemePaintings.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/0by6yw4fpzplgde/MemePaintingsHD.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/Spoons.jpg" alt="Spoons">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Spoons</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Replace various items with spoons in this quirky texture pack.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Texture Pack</span>
+                            <span class="tag">Items</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/spoons" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/p412q9an1si5uwc/spoonsTexturePackST.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/s4oh76yt88mwpje/spoonsTexturePackST.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/SpyglassOverlays.jpg" alt="Spyglass Overlays">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Spyglass Overlays</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Custom overlays for the spyglass to enhance your viewing experience.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Texture Pack</span>
+                            <span class="tag">Tools</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/spyglass-overlays" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/68yoklkub4guxlb/SpyglassOverlays.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/rbr8s2hwj3okw1k/SpyglassOverlays.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            Skin Packs Section
+            Second category of content.
+            Future enhancements:
+            - Add skin preview functionality
+            - Implement skin customization options
+            - Add skin pack bundles
+            - Consider adding user ratings
+        -->
+        <div class="category-section" id="skin-packs">
+            <h2>Skin Packs</h2>
+            <div class="mod-list">
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/FallGuys.jpg" alt="Fall Guys Skin Pack">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Fall Guys Skin Pack</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-15</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Fall Guys themed skin pack for Minecraft.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Skin Pack</span>
+                            <span class="tag">Characters</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/fall-guys-skin-pack" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/ac8xsx1gjx33udg/FallGuysSkinPackST.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/6gang3igy4xbf63/FallGuysSkinPackST.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/BreakingBas.jpg" alt="Breaking Bad">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Breaking Bad</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2023-11-15</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-apple" title="iOS"></i>
+                                    <i class="fab fa-android" title="Android"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Bring the iconic characters from Breaking Bad into your Minecraft world. Features Walter White, Jesse Pinkman, and other memorable characters. Compatible with Minecraft Bedrock 1.20.40+.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Skin Pack</span>
+                            <span class="tag">TV Series</span>
+                            <span class="tag">1.20+</span>
+                        </div>
+                        <a href="https://mcpedl.com/breaking-bad-skin-pack/" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/ew6c6d9zkh9ngzd/BreakingBadSkinPack.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/0uicuswkaxt99q6/BreakingBadSkinPack.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/Halo3.jpg" alt="Halo 3">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Halo 3</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Classic Halo 3 characters and armor sets.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Skin Pack</span>
+                            <span class="tag">Gaming</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/halo-3" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/niy6rwcthw65wlc/Halo3_StealthTanks.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/ne2fnchfz8qfirh/Halo3_StealthTanks.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/MrBeast.jpg" alt="MrBeast Crew">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>MrBeast Crew</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Skins based on MrBeast and his crew members.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Skin Pack</span>
+                            <span class="tag">YouTubers</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/mrbeast-crew" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/sns8coxj3sboj37/MrBeastCrewSkinPack.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/2dennrz9epdgocg/MrBeastCrewSkinPack.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/CODMW2.jpg" alt="Call Of Duty MW2">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Call Of Duty MW2</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Modern Warfare 2 character skins and uniforms.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Skin Pack</span>
+                            <span class="tag">Gaming</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/call-of-duty-mw2" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/ksiwk2gextekdsr/CODMW2_StealthTanks.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/cdl0k9x93bp0kf7/CODMW2_StealthTanks.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/80sIcons.jpg" alt="80's Icons">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>80's Icons</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Iconic characters and personalities from the 1980s.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Skin Pack</span>
+                            <span class="tag">Retro</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/80s-icons" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/7r9lhz08sjeakiq/80s_Icons.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/iiq8eyc0w8x248f/80s_Icons.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/TheBoys.jpg" alt="The Boys">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>The Boys</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Characters from the popular TV series The Boys.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Skin Pack</span>
+                            <span class="tag">TV Series</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/the-boys" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/s051abgefh6ihcr/TheBoys_StealthTanks.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/nljqjsqu26i4hzn/TheBoys_StealthTanks.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/BrawlStars.jpg" alt="Brawl Stars">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Brawl Stars</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Popular characters from the mobile game Brawl Stars.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Skin Pack</span>
+                            <span class="tag">Gaming</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/brawl-stars" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/l99qq6yi1tsjlv3/Brawl_Stars_Skins.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/ypyxr3gy9dubk7w/Brawl_Stars_Skins.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/WastelandWarriors.jpg" alt="Wasteland Warriors">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Wasteland Warriors</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Post-apocalyptic warrior skins for your Minecraft adventures.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Skin Pack</span>
+                            <span class="tag">Adventure</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/wasteland-warriors" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/wu3zt2i203408u9/WastelandWarriors_StealthTanks.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/n71t0vfpi3nr16i/WastelandWarriors_StealthTanks.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/GladitorialWarriors.jpg" alt="Gladiatorial Warriors">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Gladiatorial Warriors</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Ancient gladiator and warrior skins for epic battles.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Skin Pack</span>
+                            <span class="tag">Historical</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/gladiatorial-warriors" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/ca274bu3li27laq/Gladiatorial_Warriors.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/tv4nfpopya70zxl/Gladiatorial_Warriors.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/ArmoredSteves.jpg" alt="Armored Steves">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Armored Steves</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Various armored versions of the classic Steve skin.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Skin Pack</span>
+                            <span class="tag">Classic</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/armored-steves" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/z3y1x07qi9zr7w3/ArmoredSteves3_StealthTanks.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/punj61cjw907m1q/ArmoredSteves3_StealthTanks.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/Founders.jpg" alt="Stealth Tanks Founders Pack">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Stealth Tanks Founders Pack</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Exclusive skins for the Stealth Tanks team members.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Skin Pack</span>
+                            <span class="tag">Exclusive</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/stealth-tanks-founders-pack" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/6xb208hfaomqgxk/StealthTanksFoundersSkinPack.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/yqkyw1e9xnapscm/StealthTanksFoundersSkinPack.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            Maps Section
+            Third category of content.
+            Future improvements:
+            - Add map preview images
+            - Implement map difficulty indicators
+            - Add multiplayer compatibility info
+            - Consider adding map size information
+        -->
+        <div class="category-section" id="maps">
+            <h2>Maps</h2>
+            <div class="mod-list">
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/SkyBiome.jpg" alt="Sky Biomes Parkour">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Sky Biomes Parkour</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-15</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Challenging parkour map set in various sky biomes.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Map</span>
+                            <span class="tag">Parkour</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/sky-biomes-parkour" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/3ynieim9mygtplu/Sky_Biomes_Parkour_ST.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/3g3aj7uj52xbjzz/Sky_Biomes_Parkour_ST.mcworld/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCWORLD
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/1010FindTheButton.jpg" alt="10x10 Find The Button">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>10x10 Find The Button</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">A challenging find the button map in a 10x10 grid.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Map</span>
+                            <span class="tag">Puzzle</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/10x10-find-the-button" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/ilmri3mxp2kjvp0/10x10_Find_The_Button_2.0.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/8dc2ligfxaieos4/10x10_Find_The_Button_2.0.mcworld/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCWORLD
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/SkyblockXSkywars.jpg" alt="Skyblock X Skywars">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Skyblock X Skywars</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">A unique combination of Skyblock and Skywars gameplay.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Map</span>
+                            <span class="tag">Survival</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/skyblock-x-skywars" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/65yt72k78onb7fc/%25C2%25A7aSkyblock_%25C2%25A74X_%25C2%25A73Skywars_%25C2%25A752.0.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/vnvane6mrki8vcy/%25C2%25A7aSkyblock_%25C2%25A74X_%25C2%25A73Skywars_%25C2%25A752.0.mcworld/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCWORLD
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/TNTWars.jpg" alt="TNT Wars: Battling Dimensions">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>TNT Wars: Battling Dimensions</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">An explosive battle map across different dimensions.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Map</span>
+                            <span class="tag">PvP</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/tnt-wars-battling-dimensions" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/qjvy5w9okkcduo2/%25C2%25A74TNT_Wars_Battling_Dimensions.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/gnuj7kbf0zk366k/%25C2%25A74TNT_Wars_Battling_Dimensions.mcworld/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCWORLD
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/ParkourRacers.jpg" alt="Parkour Racers">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Parkour Racers</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Race against friends in this competitive parkour map.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Map</span>
+                            <span class="tag">Parkour</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/parkour-racers" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/dot90v0q7fu0ubs/%25C2%25A71Parkour_%25C2%25A74Racers.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/3otcgl06gdrsjxj/%25C2%25A71Parkour_%25C2%25A74Racers.mcworld/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCWORLD
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/MillionaireMansion.jpg" alt="Millionaires Mansion">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Millionaires Mansion</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Explore a luxurious mansion filled with secrets and treasures.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Map</span>
+                            <span class="tag">Adventure</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/millionaires-mansion" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/4cy161hkz6tsor9/Millionaires_Mansion.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/ru2y1yis9dc8k3l/Millionaires_Mansion.mcworld/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCWORLD
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            Add-ons Section
+            Fourth category of content.
+            Future enhancements:
+            - Add version compatibility check
+            - Implement dependency management
+            - Add installation instructions
+            - Consider adding changelog display
+        -->
+        <div class="category-section" id="add-ons">
+            <h2>Add-ons</h2>
+            <div class="mod-list">
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/PlayerHeadDrops.jpg" alt="Player Head Drops">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Player Head Drops</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-15</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Players drop their heads when killed.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Add-on</span>
+                            <span class="tag">Gameplay</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/player-head-drops" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/ffu7x3vrz9lajs4/PlayerHeadDropsST.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/sfu9a48xw8y41oi/PlayerHeadDropsST.mcpack/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCPACK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/ColorfulAllays.jpg" alt="Colorful Allays">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Colorful Allays</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Add colorful variants of Allays to your Minecraft world.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Add-on</span>
+                            <span class="tag">Mobs</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/colorful-allays" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/a4p9hpnt250j2w9/ColorfulAllaysST.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/5kc4fs3snvseegh/ColorfulAllaysST.mcaddon/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCADDON
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mod-card">
+                    <div class="mod-thumbnail">
+                        <img src="thumbnails/RainbowWool.jpg" alt="Rainbow Wool">
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-header">
+                            <h3>Rainbow Wool</h3>
+                            <div class="mod-meta">
+                                <span class="release-date">Updated: 2024-03-10</span>
+                                <div class="platform-icons">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mod-description">Add colorful wool blocks to your world.</p>
+                        <div class="mod-tags">
+                            <span class="tag">Add-on</span>
+                            <span class="tag">Blocks</span>
+                        </div>
+                        <a href="https://mcpedl.com/user/stealth-tanks/rainbow-wool" class="mcpedl-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on MCPEDL
+                        </a>
+                    </div>
+                    <div class="mod-actions">
+                        <span class="price">Free</span>
+                        <div class="download-dropdown">
+                            <button class="download-btn">
+                                Download
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="download-options">
+                                <a href="https://www.mediafire.com/file/qiqjewrdsunplbv/Rainbow_Wool.zip/file" class="download-option">
+                                    <i class="fas fa-file-archive"></i>
+                                    ZIP
+                                </a>
+                                <a href="https://www.mediafire.com/file/itx3xc18um2vc5m/Rainbow_Wool.mcaddon/file" class="download-option">
+                                    <i class="fas fa-cube"></i>
+                                    MCADDON
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 
+        Footer Section
+        Contains site information and links.
+        Future additions:
+        - Add newsletter signup
+        - Implement social media links
+        - Add site map
+        - Consider adding contact form
+    -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Stealth Tanks</h4>
+                <p>We create high-quality Minecraft mods to enhance your gaming experience.</p>
+                <div class="team-members">
+                    <div class="team-member">
+                        <h5>Ninja Master</h5>
+                        <p>Co-Owner, YouTube Director & DLC Creator</p>
+                    </div>
+                    <div class="team-member">
+                        <h5>DrTank</h5>
+                        <p>Co-Owner, Website Designer & DLC Creator</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#">Home</a>
+                <a href="#">Downloads</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <a href="#">Discord</a>
+                <a href="#">YouTube</a>
+                <a href="#">MCPEDL</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Stealth Tanks. All rights reserved.</p>
+            <p class="disclaimer">This site is not affiliated with Mojang Studios nor Minecraft.</p>
+        </div>
+    </footer>
+    <script>
+        // Handle dropdown positioning and accessibility
+        const dropdowns = document.querySelectorAll('.download-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+            const button = dropdown.querySelector('.download-btn');
+            const options = dropdown.querySelector('.download-options');
+            const downloadLinks = options.querySelectorAll('.download-option');
+            let isOverDropdown = false;
+            let isOverOptions = false;
+            
+            // Add ARIA attributes
+            button.setAttribute('aria-haspopup', 'true');
+            button.setAttribute('aria-expanded', 'false');
+            options.setAttribute('role', 'menu');
+            downloadLinks.forEach(link => {
+                link.setAttribute('role', 'menuitem');
+                link.setAttribute('tabindex', '-1');
+            });
+            
+            function positionDropdown() {
+                const buttonRect = button.getBoundingClientRect();
+                const spaceBelow = window.innerHeight - buttonRect.bottom;
+                
+                if (spaceBelow < options.offsetHeight && buttonRect.top > options.offsetHeight) {
+                    options.style.bottom = '100%';
+                    options.style.top = 'auto';
+                    options.style.marginBottom = '8px';
+                } else {
+                    options.style.top = '100%';
+                    options.style.bottom = 'auto';
+                    options.style.marginTop = '8px';
+                }
+
+                const containerWidth = dropdown.offsetWidth;
+                const optionsWidth = options.offsetWidth;
+                
+                const rightOverflow = (buttonRect.left + optionsWidth) > window.innerWidth;
+                if (rightOverflow) {
+                    options.style.right = '0';
+                    options.style.left = 'auto';
+                } else {
+                    options.style.left = '0';
+                    options.style.right = 'auto';
+                }
+            }
+            
+            function showDropdown() {
+                dropdowns.forEach(d => {
+                    if (d !== dropdown) {
+                        const otherButton = d.querySelector('.download-btn');
+                        const otherOptions = d.querySelector('.download-options');
+                        otherOptions.style.display = 'none';
+                        d.style.zIndex = '1';
+                        otherButton.setAttribute('aria-expanded', 'false');
+                    }
+                });
+                
+                dropdown.style.zIndex = '1000';
+                options.style.display = 'block';
+                button.setAttribute('aria-expanded', 'true');
+                positionDropdown();
+            }
+            
+            function hideDropdown() {
+                options.style.display = 'none';
+                dropdown.style.zIndex = '1';
+                button.setAttribute('aria-expanded', 'false');
+            }
+            
+            // Mouse interactions
+            dropdown.addEventListener('mouseenter', () => {
+                isOverDropdown = true;
+                showDropdown();
+            });
+
+            dropdown.addEventListener('mouseleave', () => {
+                isOverDropdown = false;
+                setTimeout(() => {
+                    if (!isOverOptions) {
+                        hideDropdown();
+                    }
+                }, 100);
+            });
+
+            options.addEventListener('mouseenter', () => {
+                isOverOptions = true;
+            });
+
+            options.addEventListener('mouseleave', () => {
+                isOverOptions = false;
+                setTimeout(() => {
+                    if (!isOverDropdown) {
+                        hideDropdown();
+                    }
+                }, 100);
+            });
+
+            // Keyboard interactions
+            button.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    showDropdown();
+                    downloadLinks[0].focus();
+                }
+            });
+
+            options.addEventListener('keydown', (e) => {
+                const activeElement = document.activeElement;
+                const currentIndex = Array.from(downloadLinks).indexOf(activeElement);
+
+                switch (e.key) {
+                    case 'Escape':
+                        e.preventDefault();
+                        hideDropdown();
+                        button.focus();
+                        break;
+                    case 'ArrowUp':
+                        e.preventDefault();
+                        if (currentIndex > 0) {
+                            downloadLinks[currentIndex - 1].focus();
+                        } else {
+                            downloadLinks[downloadLinks.length - 1].focus();
+                        }
+                        break;
+                    case 'ArrowDown':
+                        e.preventDefault();
+                        if (currentIndex < downloadLinks.length - 1) {
+                            downloadLinks[currentIndex + 1].focus();
+                        } else {
+                            downloadLinks[0].focus();
+                        }
+                        break;
+                    case 'Home':
+                        e.preventDefault();
+                        downloadLinks[0].focus();
+                        break;
+                    case 'End':
+                        e.preventDefault();
+                        downloadLinks[downloadLinks.length - 1].focus();
+                        break;
+                }
+            });
+
+            // Handle click outside
+            document.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target)) {
+                    hideDropdown();
+                }
+            });
+
+            // Update position on scroll and resize
+            window.addEventListener('scroll', () => {
+                if (options.style.display === 'block') {
+                    positionDropdown();
+                }
+            });
+            
+            window.addEventListener('resize', () => {
+                if (options.style.display === 'block') {
+                    positionDropdown();
+                }
+            });
+
+            // Add download tracking
+            downloadLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    link.classList.add('loading');
+                    // Remove loading state after download starts
+                    setTimeout(() => {
+                        link.classList.remove('loading');
+                    }, 1000);
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
