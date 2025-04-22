@@ -12,6 +12,19 @@
  */
 
 /* 
+ * Fonts
+ * Import Minecraft font for titles
+ */
+@font-face {
+    font-family: 'Minecraft';
+    src: url('fonts/Minecraft.woff2') format('woff2'),
+         url('fonts/Minecraft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 
  * Root Variables
  * These variables define the core color scheme and can be easily modified for theme changes.
  * Consider adding more variables for:
@@ -27,6 +40,7 @@
     --text-color: #ffffff;
     --text-secondary: #b8b8b8;
     --card-hover: #333333;
+    --minecraft-font: 'Minecraft', 'Inter', sans-serif;
 }
 
 /* 
@@ -68,6 +82,8 @@ nav {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--accent-color);
+    font-family: var(--minecraft-font);
+    letter-spacing: 1px;
 }
 
 .nav-links {
@@ -121,6 +137,8 @@ main {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #fff;
+    font-family: var(--minecraft-font);
+    letter-spacing: 1px;
 }
 
 .hero p {
@@ -192,11 +210,31 @@ main {
     display: flex;
     background-color: var(--secondary-color);
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     padding: 1rem;
     gap: 1.5rem;
     position: relative;
     overflow: visible;
+    border: 2px solid transparent;
+}
+
+.mod-card.highlighted {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+    transform: scale(1.02);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(76, 175, 80, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+    }
 }
 
 .mod-card:hover {
@@ -233,14 +271,16 @@ main {
 
 .mod-header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
 }
 
 .mod-header h3 {
     font-size: 1.25rem;
     font-weight: 600;
+    font-family: var(--minecraft-font);
+    letter-spacing: 1px;
 }
 
 .mod-meta {
@@ -298,6 +338,35 @@ main {
     gap: 0.5rem;
     min-width: 120px;
     position: relative;
+}
+
+.copy-link-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.copy-link-btn:hover {
+    opacity: 1;
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.copy-link-btn.copied {
+    color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.2);
+}
+
+.copy-link-btn i {
+    font-size: 14px;
 }
 
 .price {
@@ -799,4 +868,10 @@ footer {
     - Cards stack on mobile (max-width: 768px)
     - Tags wrap on smaller screens
     - Download options stack vertically on mobile
-*/ 
+*/
+
+/* Update title styles to use Minecraft font */
+h1, h2, h3, h4, h5 {
+    font-family: var(--minecraft-font);
+    letter-spacing: 1px;
+} 
