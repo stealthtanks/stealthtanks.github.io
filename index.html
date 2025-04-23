@@ -1641,11 +1641,6 @@
                     
                     // Scroll to the mod
                     targetMod.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    
-                    // Remove highlight after 3 seconds
-                    setTimeout(() => {
-                        targetMod.classList.remove('highlighted');
-                    }, 3000);
                 }
             }
         }
